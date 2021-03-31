@@ -1,5 +1,6 @@
 const postRouter = require("express").Router();
 const pool = require("../db");
+const client = require("../elephantsql");
 
 // Create a post
 
