@@ -52,7 +52,7 @@ userRouter.post("/signup", async (req, res) => {
   }
 });
 
-// Login
+// Login a User
 
 userRouter.post("/login", async (req, res) => {
   try {
