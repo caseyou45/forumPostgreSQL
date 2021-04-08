@@ -36,7 +36,7 @@ userRouter.post("/signup", async (req, res) => {
 
     if (username.startsWith("burner-")) {
       token = jwt.sign(userForToken, process.env.SECRET, {
-        expiresIn: "2m",
+        expiresIn: "24hrs",
       });
     } else {
       token = jwt.sign(userForToken, process.env.SECRET);
